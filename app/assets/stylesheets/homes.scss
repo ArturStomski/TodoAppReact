@@ -1,0 +1,115 @@
+// Place all the styles related to the homes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@media only screen and (max-width: 600px) {
+  .main-container{
+    padding: 0;
+  }
+  .flex-child-left{
+    margin: 6% 0;
+    font-size: 1.5em;
+  }
+  .flex-child-center{
+  margin: 2% 10% !important;
+}
+  .flex-container-input{
+  margin: 4% 1% !important;
+}
+  h1{
+    font-size: 2.5em;
+  }
+}
+
+.hidden{
+	display: none;
+}
+.main-container{
+  background-color: teal;
+  margin: 0;
+  padding: 0 15px;
+  border: white 12px solid;
+  color: white;
+  min-height: 100vh;
+}
+.flex-container{
+  border: silver 2px solid;
+  box-shadow: 5px 2px 2px 2px silver;
+  display: flex;
+}
+.flex-container-input{
+  margin-top:2%;
+  margin-bottom:1%;
+}
+.flex-child-center{
+  margin: 2% 35%;
+}
+.flex-child-left{
+  flex-basis: 60%;
+  padding-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.flex-child-left input{
+  margin-top: 2%;
+  width: 50%;
+}
+.flex-child-right{
+  flex-basis: 20%;
+  padding: 20px 0;
+  position:relative;
+}
+.flex-child-right:disabled{
+  opacity: 0.65; 
+  cursor: not-allowed;
+}
+
+.flex-child-left .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 5;
+  bottom: 125%;
+  left: 50%;
+  white-space:wrap;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tooltiptext::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.flex-child-left:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+body {
+  background-color: black;
+  color: #333;
+  margin: 0;
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+input{
+  margin: 5px auto;
+  background-color: silver;
+  color: teal;
+  height: 28px;
+  width: 50%;
+  padding-left:10px;
+}
+button{
+  color: white;
+  background-color: teal;
+}
